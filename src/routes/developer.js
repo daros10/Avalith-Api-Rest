@@ -26,6 +26,7 @@ app.post('/developer', (req, res) => {
     let body = req.body;
     if (body.tecnologias_conocidas.length > 0) {
         let knowTechnologies = JSON.parse(body.tecnologias_conocidas);
+
         if (!utils.isIterable(knowTechnologies)) {
             return res.status(400).json({
                 Ok: false,
@@ -37,6 +38,7 @@ app.post('/developer', (req, res) => {
         for (let technology of knowTechnologies) {
             technologiesToSave.push(technology);
         }
+
         let developer = new Developer({
             nombres_completos: body.nombres_completos,
             link_github: body.link_github,
@@ -75,7 +77,6 @@ app.put('/developer/:id', (req, res) => {
                 Ok: false,
                 message: 'Technologies are not iterable. You need to send in array format.',
             });
-
         } else {
             let technologiesToSave = new Array();
             for (let technology of knowTechnologies) {
@@ -85,7 +86,6 @@ app.put('/developer/:id', (req, res) => {
             body.tecnologias_conocidas = technologiesToSave;
             utils.updateDeveloper(id, body, res, Developer);
         }
-
     } else {
         utils.updateDeveloper(id, body, res, Developer);
     }
@@ -108,14 +108,11 @@ app.delete('/developer/:id', (req, res) => {
                 }
             });
         }
-
         res.json({
             ok: true,
             developer: developerDeleted
         });
-
     });
-
 });
 
 module.exports = app;
