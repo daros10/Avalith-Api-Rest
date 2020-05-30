@@ -8,7 +8,15 @@ module.exports = {
             if (err) {
                 return res.status(400).json({
                     ok: false,
-                    err
+                    error: err
+                });
+            }
+            if (developerDB === null) {
+                return res.status(400).json({
+                    ok: false,
+                    error: {
+                        message: 'Developer not found.'
+                    }
                 });
             }
             res.json({
