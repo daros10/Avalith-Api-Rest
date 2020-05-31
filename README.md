@@ -36,7 +36,7 @@ List of all developers.
 baseUrl/developer
 ```
 ### - Post
-Create a developer
+Create a developer.
 #### Parameters:
 * key: nombres_completos - type: String  - required: true  
 * key: link_github - type: String - required: true  
@@ -45,7 +45,7 @@ Create a developer
 baseUrl/developer
 ```
 ### - Put
-Update a developer
+Update a developer.
 #### Parameters:
 * key: id required: true
 * key: nombres_completos - type: String  - required: false  
@@ -55,7 +55,7 @@ Update a developer
 baseUrl/developer/:id
 ```
 ### - Delete
-Update a developer
+Delete a developer.
 #### Parameters:
 * key: id required: true
 ```
