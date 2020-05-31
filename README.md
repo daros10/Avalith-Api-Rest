@@ -62,14 +62,14 @@ Update a developer
 baseUrl/developer/:id
 ```
 ## Dockerized 
-***The app is dockerized for run in difernts environments.***
+***The app is dockerized for run in diferents environments.***
 
 ## Built With
 * [NodeJS] - Used to create the backend.
 * [MongoDB] - Used to save data locally. 
 * [MongoDB Atlas] - Used to save data remotely. 
 * [Heroku] - Used to deploy app.
-* [Docker] - Used to dockeried app.
+* [Docker] - Used to dockerized app.
 
 ## Author
 ***Dario Herrera***
