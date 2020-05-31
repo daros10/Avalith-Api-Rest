@@ -61,8 +61,27 @@ Delete a developer.
 ```
 baseUrl/developer/:id
 ```
-## Dockerized 
-***The app is dockerized for run in diferents environments.***
+## Dockerized App
+The app can be dockerized follow the instructions bellow.
+
+Built images:
+```
+$ sudo docker-compose build
+```
+Run docker-container:
+```
+$ sudo docker-compose up
+```
+This process create two containers.
+If you run ***docker ps*** you can see some how this:
+```
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                      NAMES
+c1a4ab23f324        avalith-api-rest_app_server   "docker-entrypoint.s…"   21 seconds ago      Up 20 seconds       0.0.0.0:3000->3000/tcp     app_server
+f073e874b23d        mongo                         "docker-entrypoint.s…"   22 seconds ago      Up 21 seconds       0.0.0.0:27017->27017/tcp   mongo
+```
+Finally, you can use the end-point locally with this container.
+
+***App is dockerized for run in diferents environments.***
 
 ## Built With
 * [NodeJS] - Used to create the backend.
