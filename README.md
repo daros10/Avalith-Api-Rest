@@ -22,7 +22,7 @@ Open the program in the terminal or a code editor and execute the command.
 ```
 $ node src/index.js
 ```
-App will run on localhost:3000 
+App will run on locallhost:3000 
 ## Running Remotely
 The application is deployed at the following link.
 * [API Rest]
