@@ -22,12 +22,14 @@ Open the program in the terminal or a code editor and execute the command.
 ```
 $ node src/index.js
 ```
-App will run on localhost:3000
+App will run on localhost:3000 
 ## Running Remotely
 The application is deployed at the following link.
-* [Avalith API Rest]
+* [API Rest]
 
 ## Using
+You can use ***Postman*** to test the services.
+
 ### - Get 
 List of all developers.
 ```
@@ -59,14 +61,22 @@ Update a developer
 ```
 baseUrl/developer/:id
 ```
+## Dockerized 
+***The app is dockerized for run in difernts environments.***
+
 ## Built With
 * [NodeJS] - Used to create the backend.
 * [MongoDB] - Used to save data locally. 
-* [MongoDB Alas] - Used to save data remotely. 
-* [Heroku] - Used to deploy App.
+* [MongoDB Atlas] - Used to save data remotely. 
+* [Heroku] - Used to deploy app.
+* [Docker] - Used to dockeried app.
 
+## Author
+***Dario Herrera***
 
    [NodeJS]: <https://nodejs.org/es/>
    [MongoDB]: <https://www.mongodb.com/es>
    [API Rest]: <https://avalith-api-rest.herokuapp.com/developer>
    [MongoDB Atlas]: <https://www.mongodb.com/cloud/atlas>
+   [Heroku]: <https://www.heroku.com/>
+   [Docker]: <https://www.docker.com/>
