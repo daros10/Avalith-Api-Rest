@@ -64,7 +64,7 @@ baseUrl/developer/:id
 ## Dockerized App
 The app can be dockerized follow the instructions bellow.
 
-Built images:
+Build images:
 ```
 $ sudo docker-compose build
 ```
